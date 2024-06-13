@@ -7,35 +7,80 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-    /* GENERAL */
-
-.my-row {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 html {
     color: white;
 }
 
+img {
+    max-width: 100%;
+}
+
+.zoom-container {
+    margin: 0 80px;
+    margin-top: 80px;
+
+}
 
     /* MAIN */
+
 
 main {
     height: calc(100vh - 75px);
     background-color: black;
     overflow: auto;
+    position: relative;
+}
+
+.speakers-buttons, .speakers-buttons2 {
+    display: inline-block;
+    padding: 5px;
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    margin: 10px 2px;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+.speakers-buttons {
+    right: 30px;
+    font-size: 0.90rem;
+}
+
+.speakers-buttons2 {
+    right: 0;
+    font-size: 0.90rem;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
 }
 
 .my-col {
-    width: calc(100% / 7);
-    background-color: lightblue;
-    border: 5px dashed yellow;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    margin-top: 10px;
+    width: calc((100 / 7) - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 245px;
+    height: 135px;
+    margin: 0 auto;
+    position: relative;
 }
+
+.name-id {
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    background-color:rgba(0,0,0,0.2);
+    padding: 7px 4px;
+    font-size: 0.80rem;
+}
+
+
+
 
     /* FOOTER */
 
@@ -71,13 +116,13 @@ footer {
 
 .bg-color-grey {
     background-color: #4A4A4A;
-    color: red;
     padding: 30px 20px;
 }
 
 footer .navigation-item i {
     font-size: 1.5rem;
     margin-bottom: 5px;
+    color: white;
 }
 
 footer .navigation-item span {
@@ -91,3 +136,9 @@ footer .navigation-item i.fa-angle-up {
 footer .navigation-item i.fa-share-from-square {
     color: #4BC800;
 }
+
+.col-1-3:last-child .navigation-item a {
+    color: red;
+    text-decoration: none;
+}
+
