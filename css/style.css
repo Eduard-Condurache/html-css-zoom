@@ -12,61 +12,57 @@ html {
     color: white;
 }
 
+body {
+    background-color: black;
+}
+
 img {
     max-width: 100%;
 }
+    /* HEADER */
 
-.zoom-container {
-    margin: 0 80px;
-    margin-top: 80px;
+header {
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+header button {
+    background-color: #4A4A4A;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-right: 5px;
+    border-radius: 4px;
 }
 
     /* MAIN */
 
 
+
 main {
-    height: calc(100vh - 75px);
-    background-color: black;
+    height: calc(100vh - 105px);
     overflow: auto;
     position: relative;
 }
 
-.speakers-buttons, .speakers-buttons2 {
-    display: inline-block;
-    padding: 5px;
-    background-color: #4A4A4A;
-    border-radius: 5px;
-    margin: 10px 2px;
-    position: absolute;
-    top: 0;
-    color: white;
-}
 
-.speakers-buttons {
-    right: 30px;
-    font-size: 0.90rem;
-}
-
-.speakers-buttons2 {
-    right: 0;
-    font-size: 0.90rem;
-}
-
-.my-row {
+.video-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
+    justify-content: center;
+    margin-top: 40px;
 
 }
 
-.my-col {
-    width: calc((100 / 7) - 20px);
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 245px;
-    height: 135px;
-    margin: 0 auto;
+.single-video {
+    width: calc(100 / 7);
+    margin-right: 3px;
+    margin-left: 3px;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -79,66 +75,57 @@ main {
     font-size: 0.80rem;
 }
 
-
-
-
     /* FOOTER */
+
 
 footer {
     height: 75px;
     background-color: #222222;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-    
-.navigation-bar {
-    display: flex;
-    width: 100%;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-}
-    
-.col-1-3 {
-    display: flex;
-    justify-content: center;
-    align-items:baseline;
-    overflow: hidden;
-}
-    
-.navigation-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
- }
-
-.bg-color-grey {
-    background-color: #4A4A4A;
-    padding: 30px 20px;
 }
 
-footer .navigation-item i {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+footer > * {
+    display: flex;
+}
+
+footer button {
+    height: 100%;
+    margin-right: 2px;
+    border: none;
+    background: none;
     color: white;
+    padding: 5px;
+    padding-right: 10px;
 }
 
-footer .navigation-item span {
-    font-size: 0.75rem;
+footer i {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
 }
 
-footer .navigation-item i.fa-angle-up {
-    font-size: 1rem;
+footer .fa-angle-up {
+    font-size: 0.80rem;
 }
 
-footer .navigation-item i.fa-share-from-square {
-    color: #4BC800;
+.green-text {
+    color:#4BC800;
 }
 
-.col-1-3:last-child .navigation-item a {
+#end-meeting {
+    background-color: #4A4A4A;
     color: red;
-    text-decoration: none;
+    padding: 20px;
 }
+    
+  
+
+    
+
+
+
+
+
+
+
 
